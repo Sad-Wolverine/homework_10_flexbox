@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
     <title>Flexbox</title>
@@ -8,30 +11,33 @@
 <body>
 
     <!-- HEADER START -->
-
-    <header>
-        <div class="header flex">
-            <div class="navigation flex">
-                <a class="head-logo" href="#">
+    <header class="head">
+        <div class="fix-size-container">
+            <div class="header flex">
+                <div class="navigation flex">
+                    <div class="logo">
+                    <a class="head-logo" href="#">
                     <img src="images/lokalise.svg" alt="logo">
-                </a>
-                <nav>
-                    <ul class="nav flex">
+                    </a>
+                    </div>
+                    <nav>
+                    <ul class="list-item flex">
                         <li class="item"><a href="#">Product</a></li>
                         <li class="item"><a href="#">Features</a></li>
                         <li class="item"><a href="#">Pricing</a></li>
                         <li class="item"><a href="#">Case studies</a></li>
                         <li class="item"><a href="#">Resources</a></li>
                     </ul>
-                </nav>
-            </div>
-            <div>
-                <a href="#"><button class="button first">Log in</button></a>
-                <a href="#"><button class="button second">Try it free</button></a>
+                    </nav>
+                </div>
+                <div class="head-buttons" >
+                <button class="button first">Log in</button>
+                <button class="button second">Try it free</button>
+                </div>
             </div> 
-        </div>  
-        <hr class="line">
+        </div> 
     </header>
+        <hr class="line">
 
     <!-- HEADER END
          MAIN START
@@ -40,7 +46,7 @@
     <main>
         <section class="section-first">
             <div class="fix-size-container">
-                <div class="first-conteiner flex">
+                <div class="first-container flex">
                     <div class="main-left">
                         <h1 class="sec-first-title">Accelerate localization from code to delivery</h1>
                             <p class="sec-first-text">A localization and translation management platform for 
@@ -294,7 +300,7 @@
                         lifesaver, and over-the-air updates are the icing on the cake.”
                     </h4>
                     <p class="name">Edward Cooper, Chief Mobile Officer</p>
-                    <img src="images/revolut.svg" alt="revolut">
+                    <img class="revolut-img" src="images/revolut.svg" alt="revolut">
                 </div>
                 <img class="cooper-icon" src="images/Cooper.svg" alt="EdwardCooper">
             </div>
@@ -348,7 +354,7 @@
     <footer class="foot">
         <div class="fix-size-container">
             <section class="footer-first flex">
-                <div>
+                <div class="foot-wrap">
                     <h3 class="footer-title">Case Studies</h3>
                     <img class="bike" src="images/bike.svg" alt="bike"> <br>    
                     <a class="specialized" href="#">    
@@ -361,7 +367,7 @@
                     </p>
                     <a class="footer-info" href="#">Read more</a>
                 </div>
-                <div class="flex">
+                <div class="flex foot-wrap">
                     <div class="foot-card">
                         <h6 class="footer-title">Product</h6>
                         <ul>
@@ -414,14 +420,14 @@
         </section>
             <hr class="footer-line">
         <section class="footer-second flex">
-            <div class="flex">
+            <div class="flex foot-items">
                 <a class="foot-a" href="#"><h4 class="logo-footer">lokalise</h4></a>
                 <a class="foot-a" href="#"><p class="footer-text">
                     Localization workflow for your web and mobile <br>
                     apps, games and digital content.
                 </p></a>
             </div>
-            <div>
+            <div class="foot-text">
                 <p class="footer-text">©2001-2020</p>
                 <p class="footer-text">All rights reserved.</p>
             </div>    

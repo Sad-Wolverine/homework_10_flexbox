@@ -17,7 +17,14 @@
 }
 
 .fix-size-container {
-    width: 1290px;
+    max-width: 1290px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.head {
+    max-width: 1290px;
     margin: 0 auto;
 }
 
@@ -28,12 +35,12 @@
 .header {
     justify-content: space-between;
     align-items: center;
-    width: 1440px;
+    max-width: 1290px;
     padding: 25px 0;
     margin: 0 auto;
 }
 
-.navigation .nav {
+.navigation .list-item {
     justify-content: flex-start;
     align-items: center;
 }
@@ -42,11 +49,15 @@
     margin-right: 30px;
 }
 
+.logo a {
+    display: flex;
+}
+
 .head-logo:hover {
     background-color: #CCCCCC;
 }
 
-.nav {
+.list-item {
     width: 549px;
     height: 30px;
 }
@@ -108,7 +119,7 @@ button.second {
 MAIN START
 section-first start */
 
-.first-conteiner {
+.first-container {
     justify-content: space-between;
     align-items: center;
     padding-top: 129px;
@@ -194,8 +205,8 @@ background-color: #DABC98;
  }
 
  .big-image {
-    width: 759px;
-    height: 515px;
+    width: 650px;
+    height: 450px;
  }
 
  /* section-first end
@@ -580,7 +591,8 @@ background-color: #DABC98;
 }
 
 .footer-first {
-    height: 774px;
+    /* height: 774px; */
+    padding-top: 50px;
     justify-content: space-between;
     align-items: center;
 }
@@ -696,3 +708,419 @@ background-color: #DABC98;
 }
 
 /* FOOTER END */
+
+@media (max-width: 1200px ) {
+
+    .header {
+        flex-direction: column;
+    }
+
+    .navigation {
+        margin-bottom: 20px;
+    }
+
+    .button, .big-button, .button-black {
+        width: 255px;
+        height: 50px;
+    }
+
+    .fix-size-container .first-container {
+        flex-direction: column;
+    }
+
+    .main-left {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .big-image {
+        margin-top: 25px;
+        width: 600px;
+        height: 450px;
+    }
+
+    .first-container {
+        padding-top: 0;
+        padding-bottom: 85px;
+    }
+
+    .sec-first-title {
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .sec-first-text {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .but-rigth, .but-left {
+        width: 250px;
+        height: 50px;
+    }
+
+    .pic {
+        width: 500px;
+        height: 500px;
+    }
+
+    .info {
+        font-size: 15px;
+        margin: 30px 30px;
+    }
+
+    .title {
+        font-size: 40px;
+        margin: 30px 30px;
+    }
+
+    .start {
+        margin: 30px 30px;
+    }
+
+    .card-icon {
+        width: 275px;
+        height: 255px;
+    }
+
+    .info-text, .info-text-second {
+        font-size: 35px;
+    }
+
+    .info-text-second {
+        padding-top: 80px;
+    }
+
+    .icon {
+        width: 150px;
+        height: 110px;
+    }
+
+    .title-icon, .link-second, .section-blue-info, .section-bird-info {
+        font-size: 20px;
+    }
+
+    .info-icon, .card-second-info, .link-second {
+        font-size: 15px;
+    }
+
+    .section-bird-text, .title-orange {
+        font-size: 45px;
+    }
+
+    .img-bird {
+        max-width: 100%;
+    }
+
+    .foot-card {
+        width: 170px;
+        height: 300px;
+    }
+
+    .bike {
+        width: 200px;
+        height: 200px;
+    }
+
+    .bike-info {
+        font-size: 15px;
+    }
+
+    .footer-item a {
+        margin-bottom: 12px;
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 950px) {
+
+    .navigation {
+        flex-direction: column;
+        width:auto;
+        height: auto;
+        align-items: center;
+    }
+
+    .big-image {
+        max-width: 100%;
+    }
+
+    .section-second {
+        margin-bottom: 20px;
+    }
+
+    .text {
+        margin: 0 30px;
+        padding-top: 60px;
+    }
+
+    .logos {
+        display: flex;
+        align-items: center;
+        margin-top: 81px;
+        gap: 34px;
+        flex-wrap: wrap;
+    }
+
+    .wrap {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .wrap-container {
+        text-align: center;
+    }
+
+    .info-text-second, .info-text {
+        text-align: center; 
+        padding-top: 30px; 
+        font-size: 30px;
+    }
+
+    .title {
+        font-size: 30px;
+        margin: 10px;
+    }
+
+    .wrap-container {
+        width: 500px;
+        height: 300px;
+        margin: 15px;
+    }
+    
+    .pic, .info {
+        margin: 15px;
+    }
+
+    .pic {
+        max-width: 100%;
+    }
+
+    .footer-first {
+        flex-direction: column;
+    }
+    
+    .bike {
+        width: 300px;
+        height: 300px;
+    }
+
+    .footer-info {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .footer-title {
+        padding-top: 20px;
+    }
+
+    .card-icon {
+        width: 250px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .icon {
+        width: 100px;
+        height: 75px;
+        margin-bottom: 5px;
+    }
+
+    .icons {
+        height: auto;
+    }
+
+    .section-blue {
+        height: auto;
+        width: auto;
+    }
+
+    .card-cooper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .cooper-icon {
+        margin-bottom: 20px;
+    }
+
+    .card-left {
+        text-align: center;
+    }
+
+    .section-blue-info, .name  {
+        margin: 10px;
+    }
+
+    .img-bird {
+        max-width: 100%;
+    }
+
+    .section-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .section-cake {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-cake {
+        height: auto;
+    }
+
+    .vl {
+        display: none;
+    }
+
+    .img-cake, .img-q2, .img-capterra {
+        margin: 10px;
+    }
+
+    .img-capterra {
+        width: 128px;
+        height: 116px;
+    }
+
+    .section-bird-text {
+        padding-top: 80px;
+    }
+
+    .foot-wrap {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        row-gap: 10px;
+    }
+
+    .foot-card {
+        width: 170px;
+        height: auto;
+    }
+
+    .footer-item a {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .fix-size-container .list-item {
+        flex-direction: column;
+        min-width: 320px;
+        height: auto;
+    }
+
+    .item a {
+        font-size: 30px;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .head-buttons {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .first {
+        margin-bottom: 20px;
+    }
+
+    .button:first-child {
+        margin-right: 0;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+   
+    .item a {
+        font-size: 20px;
+    }
+
+    .sec-first-text, .sec-first-title {
+        width: auto;
+    }
+
+    .buttons {
+        text-align: center;
+        width: 100%;
+    }
+
+    .but-left, .but-rigth {
+        margin-bottom: 20px;
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .section-second, .icon-box, .section-blue, .section-brown, .section-orange, .foot {
+        height: auto;
+        min-width: 320px;
+    }
+
+    .logos {
+        padding-bottom: 20px;
+    }
+
+    .link-second {
+        margin-bottom: 20px;
+    }
+
+    .revolut-img {
+        margin-bottom: 15px;
+    }
+
+    .card-left, .section-brown-text, .card-second {
+        width: auto;
+        height: auto;
+    }
+
+    .info-orange {
+        text-align: center;
+    }
+
+    .section-bird {
+        padding-bottom: 100px;
+    }
+
+    .big-button {
+        max-width: 100%;
+    }
+
+    .title {
+        margin: 0;
+    }
+
+    .wrap-container {
+        width: auto;
+        height: auto;
+    }
+
+    .footer-second {
+        flex-direction: column;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+
+}
